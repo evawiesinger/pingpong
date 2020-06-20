@@ -75,7 +75,7 @@ context.fillRect(0, 0, WIDTH, HEIGHT);
 
 function draw(){
 
-clear()
+clear();
 padl(padlx);
 ball(x, y, 10)
 if (x > WIDTH - R || x < 0 + R){
@@ -101,7 +101,8 @@ dy = -dy;
 counter++;
 console.log(counter);
 }
-
+  
+if(event.key == 'Enter'){
 x = x + dx;
 y = y - dy;
 
